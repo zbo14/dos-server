@@ -1,8 +1,8 @@
+.env
 .DS_Store
 .idea
-
-.env
-node_modules/
-
-.monitor
+*.log
 Makefile
+.monitor
+node_modules/
+.nyc_output

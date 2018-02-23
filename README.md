@@ -23,7 +23,7 @@ DOS helps you start building Node.js projects faster. DOS is a boilerplate proje
 1. Create new database in Postgres
 1. Run ```init.sql``` script in Posgres
 1. Run ```npm test``` to check if everything works
-1. Enjoy & build great apps 😀 
+1. Enjoy & build great apps 😀
 
 ### Users in DB:
 
