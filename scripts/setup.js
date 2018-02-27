@@ -1,4 +1,4 @@
-#!/usr/bin/env node 
+#!/usr/bin/env node
 
 const db = require('../lib/db')
 const {hashSync} = require('bcrypt')
