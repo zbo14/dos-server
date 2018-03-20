@@ -1,44 +1,38 @@
 {
   "name": "posthaste",
   "version": "1.0.0",
-  "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "lint": "eslint lib",
-    "start": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon index.js",
-    "debug": "./node_modules/.bin/cross-env NODE_ENV=development ./node_modules/.bin/nodemon --debug index.js",
-    "test": "nyc mocha --reporter spec"
-  },
-  "engines": {
-    "node": ">=6.x"
+    "doc": "./node_modules/.bin/jsdoc ./lib ./lib/events && open ./out/index.html",
+    "start": "NODE_ENV=development ./node_modules/.bin/nodemon ${npm_main}",
+    "test": "NODE_ENV=test ./node_modules/.bin/nyc ./node_modules/.bin/mocha --reporter spec"
   },
   "author": "dayone.pl",
   "license": "MIT",
   "devDependencies": {
     "chai": "^4.1.2",
-    "cross-env": "5.0.0",
     "eslint": "^4.18.1",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.9.0",
     "eslint-plugin-node": "^6.0.1",
     "eslint-plugin-promise": "^3.6.0",
     "eslint-plugin-standard": "^3.0.1",
+    "jsdoc": "^3.5.5",
     "mocha": "^5.0.1",
     "nodemon": "1.11.0",
-    "nyc": "^11.4.1"
+    "nyc": "^11.6.0"
   },
   "dependencies": {
     "bcrypt": "1.0.2",
     "body-parser": "1.17.1",
     "connect-redis": "^3.3.3",
     "cookie-parser": "1.4.3",
-    "dotenv": "^5.0.0",
     "express": "4.15.2",
-    "express-handlebars": "3.0.0",
     "express-session": "1.15.6",
     "express-validator": "3.2.0",
     "lodash": "^4.17.5",
     "method-override": "2.3.8",
+    "mongodb": "^3.0.4",
     "morgan": "1.8.1",
     "passport": "0.3.2",
     "passport-local": "1.0.0",
